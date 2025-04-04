@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(45deg, #0f0f0f, #012707);
+    background-size: cover;
+    font-family: "Gabarito", sans-serif;
+    height: 100vh;
+}
+header{
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+.logo {
+    text-align: start;
+}
+
+.logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 600;
+    height: 40px;
+    text-decoration: none;
+    color: #05b41f;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 6px #969696;
+}
+
+
+/* Caixa principal do jogo */
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+}
+.titulo{
+        padding: 2rem;
+        font-size: 25px;
+}
+.conteudo-jogo {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 5px #02db1f;
+    margin:0 30px;
+    padding:0 20px;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-jogo:hover {
+    background: rgba(0, 0, 0);
+    box-shadow: 0 0 5px #ebebeb;
+}
+
+/* Títulos e textos */
+h2,
+p {
+    color: white;
+}
+
+/* Estrutura do questionário */
+.questionario {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 70%;
+    max-width: 70%;
+}
+
+/* Área de conteúdo */
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 100%;
+    gap: 2rem;
+}
+
+/* Estilo da pergunta */
+.pergunta {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+/* Progresso da pergunta */
+.progresso {
+    text-align: end;
+    font-size: small;
+    font-weight: 500;
+    color: white;
+}
+
+/* Área das respostas */
+.respostas {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Botões de resposta */
+.botao-resposta {
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background: #079603;
+    color: white;
+}
+
+.botao-resposta:hover {
+    background: #034201;
+    font-weight: 600;
+}
+
+/* Tela de fim do jogo */
+.fim {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.fim span {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
